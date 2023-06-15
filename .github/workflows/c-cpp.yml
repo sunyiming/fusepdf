@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: apt install
-      run: sudo apt-get update && sudo apt-get install qt5-default qtbase5-dev qttools5-dev-tools
+      run: sudo apt-get update && sudo apt-get install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools
     - name: configure
       run: qmake PREFIX=/usr
     - name: make
